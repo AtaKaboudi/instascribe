@@ -1,38 +1,202 @@
 .App {
+  font-family: 'Poppins';
   text-align: center;
+  background-color: #2B3467;
+  margin : none;
+  padding-bottom: 15vh ;
+  min-height: 100vh
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: 'cover';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 8vh 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Hero  img{
+  width: 28vw;
+  transform: translateX(-7vw);
 }
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  width: 20vw;
+  transform: translateX(-7vw);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.heroText h1 {
+  margin : 0;
+  color : white;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+.heroText p {
+  margin : 0;
+  color : white;
+  font-weight: 100;
+  font-size: 12px;
+}
+.heroWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.heroWrapper h1 {
+  color : white;
+  margin-top : 20vh ;
+  font-size: 35px;
+  letter-spacing: 3px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.heroWrapper p {
+  margin-top: 0;
+  color : white;
+  margin-bottom : 10vh;
+  width: 50vw;
+  font-size: 13px;
+} 
+
+.inputContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputContainer label {
+  color : white;
+  font-weight: bold;
+}
+
+
+.inputContainer  input {
+  margin-top : 1vh;
+  margin-bottom : 4vh;
+  width : 50vw;
+  height:10vh;
+  border-radius: 20px;
+  font-size : 20px;
+  color : #090a167d;
+  padding-left: 1vw;
+
+}
+
+.brandCard {
+  margin-top: 2vh;
+  padding : 2vh 4vw;
+  background : #EB455F;
+  border-radius: 20px;
+  color : white;
+  font-weight: bold;
+  width: 15vw;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor : pointer
+}
+
+.processBtn{
+  margin-top: 2vh;
+  padding : 4vh 5vw;
+  background: linear-gradient(to left, #41587E, #EC94B9); /* Replace with your two colors */
+  border-radius: 20px;
+  color : white;
+  font-weight: bold;
+  border : none;
+  font-size: 15px;
+  cursor:pointer;
+}
+
+.loadingWrapper { 
+  height : 100%;
+  width: 100%;
+  margin-top: 40vh;
+}
+.afterWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top:7vh;
+}
+.afterWrapper h3 {
+  color: #7FC7D9;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 8vh;
+}
+.wordsCluster {
+  width : 40vw;
+  height : 20vw
+}
+.tableWrapper {
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tableWrapper h3 {
+  width: 100%;
+}
+.Table {
+  width: 20vw;
+  height: 10vh;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Table label {
+  font-weight: bold;
+  padding: 2vh 2vw;
   color: white;
+  font-size: 15px;
+  width: fit-content
 }
 
-.App-link {
-  color: #61dafb;
+.rankingSectionContainer {
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25vh 20vw; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.matchingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.matchingItem span {
+  font-size: 50px;
+  color : white;
+  margin : -2vh 7vw;
+  font-weight: bold;
+}
+.matchingItem label {
+  color : white;
+  margin-bottom: 4vh;
+}
+
+.topBrandWrapper {
+  display : flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.topBrandWrapper h4 , .topBrandWrapper h5 {
+  color : white;
+  max-width: 40vw;;
 }
